@@ -1,0 +1,6 @@
+c:\users\anu chawla\documents\visual studio 2015\Projects\Magicain\Magicain\bin\Debug\Magicain.exe.config
+c:\users\anu chawla\documents\visual studio 2015\Projects\Magicain\Magicain\obj\Debug\Magicain.csprojResolveAssemblyReference.cache
+c:\users\anu chawla\documents\visual studio 2015\Projects\Magicain\Magicain\bin\Debug\Magicain.exe
+c:\users\anu chawla\documents\visual studio 2015\Projects\Magicain\Magicain\bin\Debug\Magicain.pdb
+c:\users\anu chawla\documents\visual studio 2015\Projects\Magicain\Magicain\obj\Debug\Magicain.exe
+c:\users\anu chawla\documents\visual studio 2015\Projects\Magicain\Magicain\obj\Debug\Magicain.pdb
