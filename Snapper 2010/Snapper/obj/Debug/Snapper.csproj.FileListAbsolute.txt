@@ -1,0 +1,6 @@
+c:\users\anu chawla\documents\visual studio 2015\Projects\Snapper\Snapper\bin\Debug\Snapper.exe.config
+c:\users\anu chawla\documents\visual studio 2015\Projects\Snapper\Snapper\obj\Debug\Snapper.csprojResolveAssemblyReference.cache
+c:\users\anu chawla\documents\visual studio 2015\Projects\Snapper\Snapper\bin\Debug\Snapper.exe
+c:\users\anu chawla\documents\visual studio 2015\Projects\Snapper\Snapper\bin\Debug\Snapper.pdb
+c:\users\anu chawla\documents\visual studio 2015\Projects\Snapper\Snapper\obj\Debug\Snapper.exe
+c:\users\anu chawla\documents\visual studio 2015\Projects\Snapper\Snapper\obj\Debug\Snapper.pdb

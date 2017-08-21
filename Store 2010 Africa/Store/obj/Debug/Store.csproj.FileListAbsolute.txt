@@ -1,0 +1,6 @@
+c:\users\anu chawla\documents\visual studio 2015\Projects\Store\Store\bin\Debug\Store.exe.config
+c:\users\anu chawla\documents\visual studio 2015\Projects\Store\Store\bin\Debug\Store.exe
+c:\users\anu chawla\documents\visual studio 2015\Projects\Store\Store\bin\Debug\Store.pdb
+c:\users\anu chawla\documents\visual studio 2015\Projects\Store\Store\obj\Debug\Store.csprojResolveAssemblyReference.cache
+c:\users\anu chawla\documents\visual studio 2015\Projects\Store\Store\obj\Debug\Store.exe
+c:\users\anu chawla\documents\visual studio 2015\Projects\Store\Store\obj\Debug\Store.pdb
