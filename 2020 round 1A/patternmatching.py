@@ -38,8 +38,6 @@ def compute(case):
                     return "Case #{}: *".format(case)
     except:
         pass
-    if basepre == basesuff:
-        basepre=""
     return "Case #{}: {}{}".format(case,"".join(basepre[x] for x in range(0,len(basepre))),"".join(basesuff[x] for x in range(0,len(basesuff))))
 if __name__ == "__main__":
     cases = int(input())
