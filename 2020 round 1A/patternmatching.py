@@ -5,8 +5,8 @@ def compute(case):
     suffixes = []
     for i in range(0,number):
         strings.append(input())
-    for filter in strings:
-        new = filter.split("*")
+    for test in strings:
+        new = test.split("*")
         if new[0] != "":
             prefixes.append(new[0])
         if new[1] != "":
@@ -33,7 +33,7 @@ def compute(case):
         pass
     try:
         for i in range(1,len(prefixes)):
-            for j in range(len(prefixes),0):
+            for j in range(0,len(prefixes)):
                 if prefixes[i][j] != basepre[j]:
                     return "Case #{}: *".format(case)
     except:
