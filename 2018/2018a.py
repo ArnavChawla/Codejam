@@ -1,69 +1,49 @@
-def swaps(damage, sequence):
-    if(int(damage)<sequence.count('S')):
-        return "IMPOSIBLE"
-    total = 0
-    strength = 1
-    for char in sequence:
-        if(char == 'S'):
-            total += strength
-        else:
-            strength *=2
-    if(int(damage) >= total):
-        return "0"
-    return recurse(damage,sequence,len(sequence)-1)
-
-def recurse(damage, string,index):
-    print("here")
-    totalswaps = 0
-    if(index >= 1):
-        index = index
-    else:
-        index = len(string)-1
-    charfound = False
-    char = ""
-    num = len(string)-1
-    while(charfound == False):
-        string = list(string)
-        char = string[num]
-        print(char)
-        if char == "S":
-            print("found")
-            charfound=True
-            if string[index-1] == "C":
-                print("c foun")
-                totalswaps+=1
-                tmp = string[index]
-                string[index] = string[index-1]
-                string[index-1] = tmp
-                index-=1
-                string = ''.join(string)
-                print(string)
-                charfound=True
-            else:
-                string = ''.join(string)
-                print(string)
-                index-=1
-        else:
-            num -=1
-    print(calculate(string))
-    if(calculate(string) >  damage):
-
-        return totalswaps + recurse(damage,string,index)
-    else:
-        return totalswaps
-def calculate(string):
-    total = 0
-    strength = 1
+def compute():
+    var = input()
+    max = int(var.split(" ")[0])
+    string = str(var.split(" ")[1])
+    if max < string.count("S"):
+        return "IMPOSSIBLE"
     dealt = 0
+    power = 1
     for char in string:
-        if(char == 'C'):
-            strength *=2
+        if char == "S":
+            dealt += power
         else:
-            dealt += strength
-    return dealt
-print(swaps(1,"SS"))
-# T = int(input())
-# for case in range(1, T+1):
-#     D, P = input().split()
-#     D = int(D)
-#     print("Case #{}: {}".format(case, swaps(D,P)))
+            power *= 2
+    if max - dealt >= 0:
+        return 0
+    swaps = 0
+    solved = False
+    hold = ""
+    i = len(string) - 1
+    while i >=0:
+        if string[i] == "S" and string[i-1]== "C":
+            swaps +=1
+            for j in range(0,len(string)):
+                if j == i:
+                    hold += string[i-1]
+                elif j ==i-1:
+                    hold += string[i]
+                else:
+                    hold+=string[j]
+            dealt = 0
+            power = 1
+            i = len(string) - 1
+            for char in hold:
+                if char == "S":
+                    dealt += power
+                else:
+                    power *= 2
+            if max - dealt >= 0:
+                solved = True
+                return swaps
+            else:
+                string = hold
+                hold = ""
+        else:
+            i-=1
+if __name__ == "__main__":
+    cases = int(input())
+    for i in range(1,cases+1):
+        print("Case #{}: {}".format(i,compute()))
