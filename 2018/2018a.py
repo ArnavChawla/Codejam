@@ -14,7 +14,6 @@ def compute():
     if max - dealt >= 0:
         return 0
     swaps = 0
-    solved = False
     hold = ""
     i = len(string) - 1
     while i >=0:
@@ -36,7 +35,6 @@ def compute():
                 else:
                     power *= 2
             if max - dealt >= 0:
-                solved = True
                 return swaps
             else:
                 string = hold
